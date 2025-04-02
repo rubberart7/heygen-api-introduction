@@ -45,7 +45,7 @@ const generateVideo = async () => {
     const videoId = response.data?.data?.video_id;
     if (videoId) {
         const videoLink = `https://app.heygen.com/videos/${videoId}?sid=video-preview`;
-        console.log('Video generated! Link:', videoLink);
+        console.log('Link:', videoLink);
       } else {
         console.error('Video ID not found in the response.');
       }
