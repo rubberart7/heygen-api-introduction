@@ -44,7 +44,6 @@ const generateVideo = async () => {
     });
     const videoId = response.data?.data?.video_id;
     if (videoId) {
-        // Construct the video link correctly
         const videoLink = `https://app.heygen.com/videos/${videoId}?sid=video-preview`;
         console.log('Video generated! Link:', videoLink);
       } else {
